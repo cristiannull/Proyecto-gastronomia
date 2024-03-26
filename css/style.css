@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Serif+Display:ital@0;1&display=swap");
 
 * {
-  margin: 0;
   box-sizing: border-box;
+  margin: 0;
 }
 body {
   background-color: #f3e5d8;
@@ -12,10 +12,12 @@ body {
   max-width: 1400px;
   height: 100vh;
   margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 0px;
 
   display: grid;
   grid-template-rows: 78px 1fr 78px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 100px 1fr 100px;
 
   grid-template-areas:
     "header header header"
@@ -30,5 +32,28 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  border-radius: 6px;
+  padding: 15px;
+}
+#logo {
+  font-family: DM Serif Display;
+  font-size: 24px;
+}
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+  gap: 20px;
+  font-family: DM Sans;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #255538;
+  grid-area: footer;
+  border-radius: 6px 6px 0 0;
 }
