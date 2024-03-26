@@ -12,6 +12,23 @@ body {
   max-width: 1400px;
   height: 100vh;
   margin: 0 auto;
+
   display: grid;
   grid-template-rows: 78px 1fr 78px;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  grid-template-areas:
+    "header header header"
+    "space main space2"
+    "footer footer footer";
+}
+
+header {
+  background-color: #255538;
+  grid-area: header;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
 }
