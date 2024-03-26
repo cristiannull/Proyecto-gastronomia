@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Serif+Display:ital@0;1&display=swap");
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f3e5d8;
+}
+
+#grid-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
