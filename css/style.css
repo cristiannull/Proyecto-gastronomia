@@ -4,12 +4,13 @@
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   background-color: #f3e5d8;
 }
 
 #grid-container {
-  max-width: 1400px;
+  max-width: 100%;
   height: 100vh;
   margin: 0 auto;
   padding: 20px;
@@ -17,7 +18,7 @@ body {
 
   display: grid;
   grid-template-rows: 78px 1fr 78px;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 70px 1fr 70px;
 
   grid-template-areas:
     "header header header"
@@ -34,11 +35,14 @@ header {
   align-items: center;
   border-radius: 6px;
   padding: 15px;
+  max-height: 58px;
 }
+
 #logo {
   font-family: DM Serif Display;
   font-size: 24px;
 }
+
 header a {
   text-decoration: none;
   color: white;
@@ -50,6 +54,42 @@ header nav ul {
   gap: 20px;
   font-family: DM Sans;
   font-size: 16px;
+}
+
+main {
+  grid-area: main;
+}
+
+#banner {
+  margin-top: 28px;
+  width: 100%;
+  height: 368px;
+  background-image: url(../img/desayuno.png);
+  background-position: center center;
+  background-size: cover;
+  margin: 0 auto;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  padding: 56px;
+}
+#banner::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.33);
+  border-radius: 5px;
+}
+
+.phara {
+  position: relative;
+  font-family: DM Serif Display;
+  font-size: 64px;
+  width: 448px;
+  color: white;
+  line-height: 0.9;
 }
 
 footer {
