@@ -25,6 +25,7 @@ body {
     "space main aside space2"
     "footer footer footer footer";
 }
+
 header {
   background-color: #255538;
   grid-area: header;
@@ -54,6 +55,109 @@ header nav ul {
   font-family: "DM Sans";
   font-size: 16px;
 }
+
+a {
+  text-decoration: none;
+}
+
+main {
+  grid-area: main;
+  background-color: white;
+  padding: 20px;
+  border-radius: 6px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+}
+
+main h1 {
+  font-family: "Dm Serif Display";
+  font-size: 40px;
+  color: #7e4333;
+}
+
+main p {
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+
+h2 {
+  font-family: "DM Serif Display";
+  font-size: 24px;
+  color: #7e4333;
+}
+
+p,
+ul,
+li,
+span {
+  font-family: "DM Sans";
+  font-size: 16px;
+}
+
+.preparation {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #fff7fc;
+  padding: 20px;
+}
+
+#ingredientes {
+  background-color: white;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+#principal {
+  width: 780px;
+  height: 287px;
+  object-fit: cover;
+}
+
+#sidebar {
+  grid-area: aside;
+}
+
+#nutricion div {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #7e4333;
+}
+
+#more_recipes {
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+#more_recipes img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+#more_recipes .container_padre {
+  display: flex;
+  flex-direction: column;
+}
+
+#more_recipes .container_hijo {
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+#more_recipes .container_hijo:hover {
+  transform: scale(1.1);
+}
+
+#more_recipes .container_text {
+  margin-left: 20px;
+  color: black;
+}
+
 footer {
   grid-area: footer;
   display: flex;
