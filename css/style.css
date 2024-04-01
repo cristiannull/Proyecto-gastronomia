@@ -96,6 +96,8 @@ main {
 #titulo {
   font-family: "DM Serif Display";
   font-size: 24px;
+  letter-spacing: 1px;
+  line-height: 32.9px;
   padding-top: 40px;
   padding-bottom: 28px;
   color: #7e4333;

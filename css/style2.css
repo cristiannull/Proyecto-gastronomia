@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=DM+Serif+Display:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&display=swap");
 
 * {
   box-sizing: border-box;
@@ -93,34 +93,65 @@ span {
   font-family: "DM Sans";
   font-size: 16px;
 }
+#principal {
+  width: 780px;
+  height: 287px;
+  object-fit: cover;
+  border-radius: 6px;
+}
 
-.preparation {
+#preparation {
   margin-top: 20px;
   margin-bottom: 20px;
   background-color: #fff7fc;
   padding: 20px;
+  border-radius: 5px;
 }
 
+#preparation ul {
+  margin-top: 10px;
+}
+
+#preparation li {
+  padding-top: 3px;
+}
+
+#instrucciones {
+  padding-bottom: 30px;
+}
+
+#instrucciones h2 {
+  margin-bottom: 10px;
+}
 #ingredientes {
   background-color: white;
   border-radius: 6px;
   padding: 20px;
 }
 
-#principal {
-  width: 780px;
-  height: 287px;
-  object-fit: cover;
+#ingredientes ul {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 #sidebar {
   grid-area: aside;
+}
+#nutricion span {
+  font-family: "DM Sans";
+  font-size: 16px;
 }
 
 #nutricion div {
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid #7e4333;
+  padding: 8px;
+}
+
+#nutricion .cantidades {
+  color: #7e4333;
+  font-weight: 700;
 }
 
 #more_recipes {
