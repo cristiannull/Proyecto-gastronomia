@@ -33,12 +33,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
   border-radius: 6px;
-  padding: 15px;
   max-height: 58px;
+  font-family: "DM Sans";
 }
 
-#logo {
+#logo,
+#logo_foot {
   font-family: "DM Serif Display";
   font-size: 24px;
 }
@@ -52,7 +54,6 @@ header nav ul {
   display: flex;
   list-style-type: none;
   gap: 20px;
-  font-family: "DM Sans";
   font-size: 16px;
 }
 
@@ -61,13 +62,11 @@ main {
 }
 
 #banner {
-  margin-top: 28px;
   max-width: 100%;
   height: 368px;
   background-image: url(../img/desayuno.png);
   background-position: center center;
   background-size: cover;
-  margin: 0 auto;
   border-radius: 5px;
   display: flex;
   justify-content: flex-start;
@@ -84,7 +83,7 @@ main {
   border-radius: 5px;
 }
 
-.phara {
+.text-prueba {
   position: relative;
   font-family: "DM Serif Display";
   font-size: 64px;
@@ -105,10 +104,6 @@ main {
 
 #Recipes a {
   text-decoration: none;
-}
-
-#Recipes {
-  margin: 0 auto;
 }
 
 #Recipes img {
@@ -146,17 +141,11 @@ main {
   font-size: 16px;
   color: black;
 }
-.recipes1 {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
+.recipes1,
 .recipes2 {
   display: flex;
   gap: 20px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   width: 100%;
 }
 
@@ -169,12 +158,7 @@ footer {
   max-height: 78px;
   background-color: #255538;
   border-radius: 6px 6px 0 0;
-}
-
-#logo_foot {
-  font-family: "DM Serif Display";
-  font-size: 24px;
-  padding-left: 20px;
+  padding: 20px;
 }
 
 footer p {
