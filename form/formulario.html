@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitCook</title>
+    <link rel="stylesheet" href="../css/style-form.css">
+
+</head>
+
+<body>
+    <div id="grid-container">
+        <header>
+            <div id="logo">
+                <a href="../index.html">BitCook</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="./formulario.html">Send your recipe</a></li>
+                    <li class="switch">
+                        <button></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h1>Send us your recipe!</h1>
+                <p>They say everything looks better with odd numbers of things. But sometimes I put even numbers--just
+                    to upset the critics. Exercising the imagination, experimenting with talents, being creative; these
+                    things, to me, are truly the windows to your soul. </p>
+                <div>
+                    <label for="Recipe_name">
+                        <h2>Recipe name</h2>
+                    </label>
+                    <input type="text" name="Recipe_name" id="Recipe_name">
+                </div>
+                <div>
+                    <label for="Preparation_Time">
+                        <h2>Prepartion Time</h2>
+                    </label>
+                    <input type="text" name="Preparation_Time" id="Preparation_Time">
+                </div>
+                <div>
+                    <label for="Ingredients">
+                        <h2>Ingredients</h2>
+                    </label>
+                    <textarea type="text" name="Ingredients" id="Ingredients"></textarea>
+                </div>
+                <div>
+                    <label for="Instructions">
+                        <h2>Introductions</h2>
+                    </label>
+                    <textarea type="text" name="Instructions" id="Instructions" rows="10" cols="30"></textarea>
+                </div>
+
+                <button type="submit">Send</button>
+            </div>
+        </main>
+        <footer>
+            <p id="logo_foot">BitCook</p>
+            <p>© 2024 Bogotá Institute of Technology</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

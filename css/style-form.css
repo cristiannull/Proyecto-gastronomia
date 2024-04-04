@@ -18,7 +18,7 @@ body {
 
   display: grid;
   grid-template-rows: 78px 1fr 78px;
-  grid-template-columns: 100px 1fr 100px;
+  grid-template-columns: 300px 1fr 300px;
 
   grid-template-areas:
     "header header header"
@@ -65,6 +65,7 @@ header nav ul {
   background-color: white;
   border-radius: 100%;
 }
+
 .switch button {
   width: 100%;
   height: 100%;
@@ -72,99 +73,69 @@ header nav ul {
   background-size: cover;
   border: 0;
 }
+
 main {
   grid-area: main;
   margin-bottom: 60px;
 }
 
-#banner {
-  max-width: 100%;
-  height: 368px;
-  margin: 0 auto;
-  background-image: url(../img/desayuno.png);
-  background-position: center center;
-  background-size: cover;
-  border-radius: 5px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-  padding: 56px;
-}
-
-#banner::before {
-  position: absolute;
-  content: "";
-  inset: 0;
-  background-color: rgba(0, 0, 0, 0.33);
-  border-radius: 5px;
-}
-
-.text-prueba {
-  position: relative;
-  font-family: "DM Serif Display";
-  font-size: 64px;
-  width: 448px;
-  color: white;
-  line-height: 0.9;
-}
-
-h1 {
-  font-family: "DM Serif Display";
-  font-size: 24px;
-  letter-spacing: 1px;
-  line-height: 32.9px;
-  padding-top: 40px;
-  padding-bottom: 28px;
-  color: #7e4333;
-}
-#Recipes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 40px;
-  width: 100%;
-}
-#Recipes a {
-  text-decoration: none;
-}
-
-#Recipes img {
-  width: 100%;
-  height: 248px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-#Recipes .recipe {
-  width: 31%;
+.container {
   background-color: white;
-  padding: 10px;
-  border-radius: 5px;
-  transition: transform 0.3s ease;
-  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 6px;
 }
 
-#Recipes .recipe:hover {
-  transform: scale(1.1);
-}
-
-#Recipes h2 {
-  padding-top: 20px;
-  padding-left: 10px;
+.container h1,
+.container h2 {
   font-family: "DM Serif Display";
   color: #7e4333;
-  font-size: 36px;
+  margin: 20px 0 10px 0;
 }
 
-#Recipes ul {
-  padding-top: 11px;
+.container h1 {
+  margin-top: 0px;
 }
 
-#Recipes ul li {
+.container p {
   font-family: "DM Sans";
-  font-size: 16px;
-  color: black;
+}
+
+#Recipe_name,
+#Preparation_Time {
+  width: 100%;
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dfdfdf;
+}
+
+#Ingredients,
+#Instructions {
+  width: 100%;
+  height: 170px;
+  border-radius: 5px;
+  border: none;
+  background-color: #dfdfdf;
+  resize: none;
+}
+
+.container button {
+  margin-top: 20px;
+  width: 120px;
+  padding: 10px;
+  border-radius: 80px;
+  border: none;
+  background-color: #255538;
+  color: white;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #336848;
+}
+
+.container button:active {
+  background-color: #449a67;
 }
 
 footer {
