@@ -276,4 +276,11 @@ body.active span {
       "aside aside aside aside"
       "footer footer footer footer";
   }
+  main {
+    width: 100%;
+  }
+  #sidebar {
+    margin-left: 0;
+    width: 100%;
+  }
 }
